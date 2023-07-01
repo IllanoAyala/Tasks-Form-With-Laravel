@@ -1,0 +1,51 @@
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    margin: 1%;
+    padding: 20px;
+}
+
+.container{
+    position: relative;
+    top: 15%;
+    left: 30%;
+    width: 80vh;
+    height: 20vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+    padding-top: 2%;
+}
+
+h1{
+    text-align: center;
+    color: aliceblue;   
+}
+
+.container label{
+    position: relative;
+    color: aliceblue;
+    font-size: 16px; 
+    left: 5%;
+    transform: translate(-50%, -50%);
+}
+
+input{
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 8px 12px;
+    width: 76%;
+    margin-bottom: 6px;
+}
+
+#icon-add{
+    position: absolute;
+    left: 91%;
+    top: 26%;
+    transform: translate(-50%, -50%);
+}
+
