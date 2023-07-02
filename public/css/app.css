@@ -9,7 +9,7 @@ body{
 .container{
     position: relative;
     top: 15%;
-    left: 30%;
+    left: 29%;
     width: 80vh;
     height: 20vh;
     background-color: rgba(0, 0, 0, 0.4);
@@ -30,7 +30,7 @@ h1{
     transform: translate(-50%, -50%);
 }
 
-input{
+#task-input{
     background-color: #f2f2f2;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -38,14 +38,46 @@ input{
     font-family: Arial, sans-serif;
     font-size: 14px;
     padding: 8px 12px;
-    width: 76%;
+    width: 85%;
     margin-bottom: 6px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#task-input:focus{
+    border-color: #66afe9;
+    box-shadow: 0 0 4px #66afe9;
+}
+
+#task-input[type="text"]:hover{
+    background-color: #e6e6e6;
+}
+
+#task-input[type="text"]:hover:placeholder{
+    color: #999;
+}
+
+#submit-input{
+    width: 80px;
+    background-color: #f2f2f2;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 1%;
+    margin-left: 37%;
+    font-size: 14px;
+    padding: 8px 12px;
+    transition: color 0.3s, box-shadow 0.3s;
+}
+
+#submit-input:hover{
+    color: #66afe9;
+    box-shadow: 0 0 4px #66afe9;
 }
 
 #icon-add{
     position: absolute;
     left: 91%;
-    top: 26%;
+    top: 27%;
     transform: translate(-50%, -50%);
 }
 

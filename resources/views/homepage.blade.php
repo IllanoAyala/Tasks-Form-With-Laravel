@@ -9,12 +9,15 @@
 <body>
     <h1>Lista de Tarefas</h1>
     <div class="container">
-        <form action="homepage.blade.php"> 
+        <form method="get">
             <label for="nome">        
-                <input type="text" name="nome" id="" placeholder="Nome da Tarefa">               
-            </label>
-            <a href=""><img src="/img/icon-adicionar.png" alt="Adicionar" width="45px" height="45px" id="icon-add"></a><br>
-        </form>   
+                <input type="text" name="nome" id="task-input" placeholder="Nome da Tarefa">               
+            </label><br>
+            <label>
+                <input type="submit" value="Salvar" id="submit-input">
+            </label> 
+        </form>          
     </div>
+    <label><?php echo $nome_tarefa?></label>
 </body>
 </html>
