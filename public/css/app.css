@@ -28,10 +28,12 @@ body{
     margin-top: 1%;
     left: 29%;
     width: 80vh;
-    height: 20vh;
+    height: auto;
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 30px;
-    padding-top: 2%;   
+    padding-top: 1%;
+    padding-bottom: 1%;
+            
 }
 
 .container-1 label{
@@ -42,15 +44,15 @@ body{
 
 .content{
     position: relative;
-    /* border: 1px solid #ccc; */
     border-radius: 4px;
-    top: 10%;
+    top: 16px;
     left: 5%;
     padding-top: 1%;
-
     width: 80%;
+    
     background-color: aliceblue;
     padding-bottom: 1%;
+    margin-bottom: 0%;
 }
 
 .content:hover{
@@ -123,7 +125,7 @@ img{
     position: relative;
     width: 42px;
     height: 42px;
-    margin-top: -5%;
+    margin-top: -24px;
     margin-bottom: 0%;
     margin-left: 87%;
 }

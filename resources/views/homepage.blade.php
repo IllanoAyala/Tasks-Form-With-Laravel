@@ -9,27 +9,27 @@
 <body>
     <h1>Lista de Tarefas</h1>
     <div class="container">      
-        <form method="POST">
+        <form method="POST" action="{{ url('/homepage/create-task') }}">
             @csrf
             <label for="nome">        
                 <input type="text" name="nomeTarefa" id="task-input" placeholder="Nome da Tarefa">               
             </label><br>
             <label>
-                <input type="submit" value="Salvar" id="submit-input">
-                
+                <input type="submit" value="Salvar" id="submit-input">                
             </label> 
         </form>         
     </div>
     <div class="container-1">
         <?php
             foreach($tasks as $task){
+                
                 ?>
                     <div class="content">
                         <label>
                             <?php echo$task->nomeTarefa?>                          
                         </label>
                     </div>
-                    <a href="\homepage?deletar=<?php echo$task->idTarefa?>"><img src="\img\icon-apagar.png" alt="Deletar"></a><br>
+                    <a href="homepage/deletar/<?php echo $task->idTarefa?>"><img src="\img\icon-apagar.png" alt="Deletar"></a><br>
                 <?php
             }
         ?>

@@ -19,10 +19,7 @@ use App\Http\Controllers\TasksController;
 //     return view('welcome');
 // });
 
+Route::post('/homepage', [TasksController::class, 'index']);
+Route::post('/homepage/create-task', [TasksController::class, 'create']);
+Route::get('homepage/deletar/{idTarefa}', [TasksController::class, 'delete']);
 Route::get('/homepage', [TasksController::class, 'index']);
-Route::post('/homepage', [TasksController::class, 'create']);
-
-if (isset($_GET['deletar'])){
-     Route::get('/homepage', [TasksController::class, 'delete']);
-}
-

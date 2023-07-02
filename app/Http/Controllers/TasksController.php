@@ -26,13 +26,11 @@ class TasksController extends Controller
         return redirect('/homepage');
     }
 
-    public function delete(Request $request){
-    
-    $idTarefa = $request->query('deletar');
-        if (!empty($idTarefa)) {
+    public function delete($id){
+        
+        $idTarefa = $id;
         Tasks::where('idTarefa', $idTarefa)->delete();
-
-        }   
+  
         return redirect('/homepage');       
     }
 }
