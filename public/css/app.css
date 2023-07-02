@@ -11,10 +11,50 @@ body{
     top: 15%;
     left: 29%;
     width: 80vh;
-    height: 20vh;
+    height: 15vh;
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 30px;
     padding-top: 2%;
+}
+
+.container label{
+    position: relative;
+    left: 5%;
+    transform: translate(-50%, -50%);
+}
+
+.container-1{
+    position: relative;
+    margin-top: 1%;
+    left: 29%;
+    width: 80vh;
+    height: 20vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+    padding-top: 2%;   
+}
+
+.container-1 label{
+    margin-left: 3%;
+    font-size: 17px;
+    color: #333;
+}
+
+.content{
+    position: relative;
+    /* border: 1px solid #ccc; */
+    border-radius: 4px;
+    top: 10%;
+    left: 5%;
+    padding-top: 1%;
+
+    width: 80%;
+    background-color: aliceblue;
+    padding-bottom: 1%;
+}
+
+.content:hover{
+    background-color: #e6e6e6;
 }
 
 h1{
@@ -22,16 +62,8 @@ h1{
     color: aliceblue;   
 }
 
-.container label{
-    position: relative;
-    color: aliceblue;
-    font-size: 16px; 
-    left: 5%;
-    transform: translate(-50%, -50%);
-}
-
 #task-input{
-    background-color: #f2f2f2;
+    background-color: aliceblue;
     border: 1px solid #ccc;
     border-radius: 4px;
     color: #333;
@@ -58,7 +90,7 @@ h1{
 
 #submit-input{
     width: 80px;
-    background-color: #f2f2f2;
+    background-color: aliceblue;
     color: #333;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -79,5 +111,20 @@ h1{
     left: 91%;
     top: 27%;
     transform: translate(-50%, -50%);
+}
+
+a{
+    position: relative;
+    font-size: 0px;
+    margin: 0px;
+}
+
+img{
+    position: relative;
+    width: 42px;
+    height: 42px;
+    margin-top: -5%;
+    margin-bottom: 0%;
+    margin-left: 87%;
 }
 

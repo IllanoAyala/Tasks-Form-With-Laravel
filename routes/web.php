@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\TasksController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,5 +19,10 @@ use App\Http\Controllers\HomeController;
 //     return view('welcome');
 // });
 
-Route::get('/', [HomeController::class, 'index']);
-Route::post('/', [HomeController::class, 'index']);
+Route::get('/homepage', [TasksController::class, 'index']);
+Route::post('/homepage', [TasksController::class, 'create']);
+
+if (isset($_GET['deletar'])){
+     Route::get('/homepage', [TasksController::class, 'delete']);
+}
+
